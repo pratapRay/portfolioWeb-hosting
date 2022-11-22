@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>links}}
+</head>
+
+<body>
+  <!-- navbar section -->
+  {{>navbar}}
+  <!-- Main section -->
+  {{>intro}}
+  <!-- about section -->
+ {{>about}}
+  <!-- services section -->
+ {{>services}}
+  <!-- skills section -->
+ {{>myskills}}
+
+  <!-- my-recent-work section -->
+ {{>myrecentwork}}
+<!-- contact-me -->
+
+{{>contact}}
+  <!-- footer -->
+{{>footer}}
+<!-- scripts -->
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.navbar', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('.about_header_right', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('.about_header_left', { delay: 700, origin: 'right' });
+    ScrollReveal().reveal('.services-items', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('#services-top-head', { delay: 500, origin: 'right' });
+    ScrollReveal().reveal('.skills-container', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('#My-Recent-Work', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.work-items-container', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('#contact-head', { delay: 600, origin: 'left' });
+    ScrollReveal().reveal('.contact-para', { delay: 700, origin: 'right' });
+    ScrollReveal().reveal('.my-contact h1 ', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.social-link', { delay: 500, origin: 'bottom',interval:'200' });
+    ScrollReveal().reveal('.social-link img', { delay: 500, origin: 'bottom',interval:'200' });
+  
+
+
+
+
+
+
+
+    
+
+    var type = new Typed('#typing-text', {
+      strings: ['Youtuber', 'Freelancer', 'Graphic Designer', 'MERN Developer', 'Youtuber'],
+      typeSpeed: 120,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
